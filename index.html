@@ -1,20 +1,79 @@
-
 <!DOCTYPE html>
-<html>
+<!-- ✅ SEO : attribut lang indispensable pour les moteurs de recherche -->
+<html lang="fr">
 	<head>
-		<title>A compléter !</title>
-		
-		<!--Metatags-->
+		<!-- ✅ SEO : charset en premier, avant tout autre tag -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="">
-		
-		<!--Open graph data-->
-		<meta property="og:title" content=""/>
-		<meta property="og:type" content=""/>
-		<meta property="og:url" content=""/>
-		<meta property="og:image" content=""/>
-		<meta property="og:description" content=""/>
+
+		<!-- ✅ SEO : Title enrichi, longue traîne, 60-70 caractères max -->
+		<title>Festival des Films de Plein Air – Parc Monceau Paris | Cinéma d'auteur & Voyage – Août 2026</title>
+
+		<!-- ✅ SEO : Meta description incitative, 150-160 caractères, avec mots-clés naturels -->
+		<meta name="description" content="Découvrez le Festival des Films de Plein Air au parc Monceau à Paris, du 5 au 7 août 2026. Cinéma d'auteur gratuit sous les étoiles autour du thème du voyage.">
+
+		<!-- ✅ SEO : Mots-clés longue traîne (secondaire, mais utile) -->
+		<meta name="keywords" content="festival cinéma plein air Paris 2026, films d'auteur parc Monceau, projection cinéma gratuit Paris été, festival film voyage Paris, cinéma sous les étoiles Paris, films d'auteur thème voyage">
+
+		<!-- ✅ SEO : Auteur et robots -->
+		<meta name="author" content="Association Les Films de Plein Air">
+		<meta name="robots" content="index, follow">
+
+		<!-- ✅ SEO : URL canonique – évite le duplicate content -->
+		<link rel="canonical" href="https://www.festival-filmspleinair.org/">
+
+		<!-- ✅ SEO : Open Graph – optimise le partage sur Facebook, LinkedIn -->
+		<meta property="og:title" content="Festival des Films de Plein Air – Parc Monceau Paris | Août 2026"/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="https://www.festival-filmspleinair.org/"/>
+		<meta property="og:image" content="https://www.festival-filmspleinair.org/images/og-festival.jpg"/>
+		<meta property="og:description" content="Cinéma d'auteur en plein air au parc Monceau à Paris. Projections gratuites du 5 au 7 août 2026 autour du thème du voyage."/>
+		<meta property="og:locale" content="fr_FR"/>
+		<meta property="og:site_name" content="Festival des Films de Plein Air"/>
+
+		<!-- ✅ SEO : Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Festival des Films de Plein Air – Parc Monceau Paris | Août 2026">
+		<meta name="twitter:description" content="Cinéma d'auteur en plein air au parc Monceau à Paris. Projections gratuites du 5 au 7 août 2026 autour du thème du voyage.">
+		<meta name="twitter:image" content="https://www.festival-filmspleinair.org/images/og-festival.jpg">
+
+		<!-- ✅ SEO : Données structurées Schema.org Event = rich snippets Google -->
+		<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Event",
+			"name": "Festival des Films de Plein Air – Parc Monceau Paris",
+			"description": "Festival de cinéma d'auteur en plein air au parc Monceau à Paris, autour du thème du voyage. Projections gratuites chaque soir de 18h à minuit.",
+			"startDate": "2026-08-05T18:00:00+02:00",
+			"endDate": "2026-08-07T23:59:00+02:00",
+			"eventStatus": "https://schema.org/EventScheduled",
+			"eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+			"location": {
+				"@type": "Place",
+				"name": "Parc Monceau",
+				"address": {
+					"@type": "PostalAddress",
+					"streetAddress": "35 Boulevard de Courcelles",
+					"addressLocality": "Paris",
+					"postalCode": "75008",
+					"addressCountry": "FR"
+				}
+			},
+			"organizer": {
+				"@type": "Organization",
+				"name": "Association Les Films de Plein Air",
+				"email": "contact@festival-filmspleinair.org"
+			},
+			"image": "https://www.festival-filmspleinair.org/images/og-festival.jpg",
+			"url": "https://www.festival-filmspleinair.org/",
+			"isAccessibleForFree": true,
+			"funder": [
+				{ "@type": "Organization", "name": "Mairie de Paris" },
+				{ "@type": "Organization", "name": "Région Île-de-France" },
+				{ "@type": "Organization", "name": "France Télévisions" }
+			]
+		}
+		</script>
 
 		<!--fonts-->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,600,700" rel="stylesheet">
@@ -38,60 +97,61 @@
 		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K9DSXDLT"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager (noscript) -->
+
 		<!--00.header-->
 		<nav class="navbar sticky-top navbar-expand-lg navbar-dark maNav">
 			<a class="navbar-brand" href="#">
-				<img src="images/logo.jpg" width="100"/>
+				<!-- ✅ SEO : alt descriptif sur le logo -->
+				<img src="images/logo.jpg" width="100" alt="Logo Festival des Films de Plein Air – Paris"/>
 			</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Ouvrir le menu de navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav ml-auto">
-				<a class="nav-item nav-link active" href="#">accueil <span class="sr-only">(current)</span></a>
-				<a class="nav-item nav-link" href="films.html">Les Films</a>
-				<a class="nav-item nav-link navLink" href="#booking">Réservation</a>
-				<a href="blog.html" class="nav-item nav-link navLink">Actualités</a>
-				<a class="nav-item nav-link" href="contact.html">Contact</a>
+				<!-- ✅ SEO : title explicites sur les liens de navigation -->
+				<a class="nav-item nav-link active" href="#" title="Accueil du Festival des Films de Plein Air">Accueil <span class="sr-only">(current)</span></a>
+				<a class="nav-item nav-link" href="films.html" title="Programmation des films d'auteur 2026">Les Films</a>
+				<a class="nav-item nav-link navLink" href="#booking" title="Réserver vos places pour le festival">Réservation</a>
+				<a href="blog.html" class="nav-item nav-link navLink" title="Actualités du festival cinéma plein air Paris">Actualités</a>
+				<a class="nav-item nav-link" href="contact.html" title="Contacter l'association Les Films de Plein Air">Contact</a>
 				</div>
 			</div>
 		</nav>
 		<!--end header-->
 
 		<!--Modal cookie-->
-		
-			<div class="alert alert-secondary alert-dismissible fade show text-center" role="alert">
+		<div class="alert alert-secondary alert-dismissible fade show text-center" role="alert">
 			<p>
 				En poursuivant votre navigation sur ce site, vous acceptez l'utilisation de Cookies. Ces cookies ne sont utilisés qu'à des fins statistiques.
 			</p>
-			<button type="button" class="btn btn-success btn-sm" data-dismiss="alert" aria-label="Close">
-				J'accepte
-			</button>
-			<button type="button" class="btn btn-danger btn-sm" data-dismiss="alert" aria-label="Close">
-					Je refuse
-			</button>
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			<button type="button" class="btn btn-success btn-sm" data-dismiss="alert" aria-label="Accepter les cookies">J'accepte</button>
+			<button type="button" class="btn btn-danger btn-sm" data-dismiss="alert" aria-label="Refuser les cookies">Je refuse</button>
+			<button type="button" class="close" data-dismiss="alert" aria-label="Fermer">
 				<span aria-hidden="true">&times;</span>
 			</button>
 		</div>
-		<!--Modal cookie-->
+		<!--end Modal cookie-->
+
 		<!--01.accueil-->
 		<section class="container-fluid welcome">
 			<div class="container">
 				<div class="row">
 					<aside class="col-lg-6">
-						
-						<!--<img src="images/01-welcomeAside.jpg" class="img-fluid" alt="Films en plein air">-->
+						<!--<img src="images/01-welcomeAside.jpg" class="img-fluid" alt="Projection de cinéma en plein air au parc Monceau, Paris">-->
 					</aside>
 					<article class="col-lg-6">
-						<p>-Festival-</p>
+						<!-- ✅ SEO : H1 unique sur la page, explicite, riche en mots-clés -->
+						<h1>Festival des Films de Plein Air – Parc Monceau, Paris</h1>
 						<div class="date">
-							<span>-Mois-</span>
-							<span class="textshadow">-Année-</span>
-							<span>-Edition-</span>
+							<span>Août</span>
+							<span class="textshadow">2026</span>
+							<span>3ème édition</span>
 						</div>
-						<p>-Slogan-</p>
-						<a href="films.html" class="btn btn-custom">-Programme-</a>
+						<!-- ✅ SEO : slogan intégrant le mot-clé thématique "voyage" -->
+						<p>Le cinéma d'auteur sous les étoiles, autour du thème du <strong>voyage</strong></p>
+						<!-- ✅ SEO : title explicite sur le CTA -->
+						<a href="films.html" class="btn btn-custom" title="Voir la programmation des films d'auteur – Festival plein air Paris 2026">Voir la programmation</a>
 					</article>
 				</div>
 			</div>
@@ -103,13 +163,14 @@
 			<div class="container">
 				<div class="row">
 					<article class="col-lg-6">
-						<h2 id="about">-Titre-</h2>
-						<p>In principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit
-                        </p>
-						<a href="#booking" class="btn btn-custom"> Je réserve !</a>
+						<!-- ✅ SEO : H2 descriptif avec mots-clés -->
+						<h2 id="about">Le festival de cinéma en plein air à Paris</h2>
+						<!-- ✅ SEO : texte original, informatif, avec mots-clés intégrés naturellement -->
+						<p>Organisé par l'association <strong>Les Films de Plein Air</strong>, le festival se tient chaque année au <strong>parc Monceau</strong>, dans le 8ème arrondissement de Paris. Pendant trois soirées, du <strong>5 au 7 août 2026</strong>, de 18h à minuit, le public est invité à découvrir une sélection de <strong>films d'auteur</strong> sous un ciel étoilé. En 2026, le festival explore le thème du <strong>voyage</strong> à travers le regard de cinéastes du monde entier. Une programmation exigeante, accessible à tous, gratuite et en plein air.</p>
+						<a href="#booking" class="btn btn-custom" title="Réserver vos places gratuitement pour le festival"> Je réserve !</a>
 					</article>
 					<aside class="col-lg-6 order-first order-lg-2">
-						<!--<img src="images/02-parcMonceauAside.jpg" class="img-fluid" alt="Parc Monceau">-->
+						<!--<img src="images/02-parcMonceauAside.jpg" class="img-fluid" alt="Le parc Monceau à Paris, cadre verdoyant du festival de cinéma en plein air">-->
 					</aside>
 				</div>
 			</div>
@@ -121,15 +182,16 @@
 			<div class="container">
 				<div class="row">
 					<aside class="col-lg-6">
-						<!--<img src="images/03-actuAside.jpg" class="img-fluid" alt="Actualité">-->
+						<!--<img src="images/03-actuAside.jpg" class="img-fluid" alt="Actualités du Festival des Films de Plein Air 2026">-->
 					</aside>
 					<article class="col-lg-6">
-						<h2 id="news">-Titre-</h2>
-						<p>In principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit
-
-						<p>-Lien possible-<a href="#">ici</a>.</p>
-						<p>In principio creavit Deus caelum et terram terra autem erat inanis vacua principio creavit </p>
-						<a href="rendez-vous-le-05-aout.html" class="btn btn-custom">Lire la suite</a>
+						<!-- ✅ SEO : H2 avec mot-clé événementiel -->
+						<h2 id="news">Actualités du festival</h2>
+						<!-- ✅ SEO : texte structuré et informatif -->
+						<p>Suivez toutes les dernières nouvelles du <strong>Festival des Films de Plein Air de Paris</strong> : annonce de la programmation 2026, présentation des films d'auteur sélectionnés autour du thème du voyage, informations pratiques sur les séances en plein air au parc Monceau.</p>
+						<p>Rendez-vous le 5 août pour la soirée d'ouverture ! <a href="rendez-vous-le-05-aout.html" title="Lire l'article : soirée d'ouverture du festival le 5 août 2026">En savoir plus</a>.</p>
+						<p>Soutenu par la <strong>Mairie de Paris</strong>, la <strong>Région Île-de-France</strong> et <strong>France Télévisions</strong>, le festival bénéficie d'une diffusion numérique nationale.</p>
+						<a href="rendez-vous-le-05-aout.html" class="btn btn-custom" title="Lire la suite des actualités du festival cinéma plein air Paris">Lire la suite</a>
 					</article>
 				</div>
 			</div>
@@ -139,48 +201,39 @@
 		<!--04.films-->
 		<section class="container-fluid movie">
 			<div class="container">
-				
 				<div class="row">
-					<!--<div class="col-12 col-sm-4 col-md2 imgResponsive">
-						<a href="#"><img src="images/01lesFiguresDeLombre.png"></a>
-					</div>-->
-					<div class="col-12"><h2 id="movie">-Titre-</h2></div>
-					<div class="col-sm-4 col-md-3 col-lg-2 ">
-						<a href="films.html#01film" class="hoverImg" ><img src="images/01-films.jpg" class="img-fluid" alt="affiche film"></a>
-						
-					</div>
-					<div class="col-sm-4 col-md-3 col-lg-2 ">
-						<a href="films.html#02film"><img src="images/02-films.jpg" class="img-fluid" alt=""></a>
+					<!-- ✅ SEO : H2 précis avec mots-clés thématiques -->
+					<div class="col-12"><h2 id="movie">Programmation 2026 – Films d'auteur sur le thème du voyage</h2></div>
+					<!-- ✅ SEO : alt descriptifs sur chaque affiche -->
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#01film" class="hoverImg" title="Voir le détail du film n°1"><img src="images/01-films.jpg" class="img-fluid" alt="Affiche film d'auteur sélectionné n°1 – Festival Films de Plein Air Paris 2026"></a>
 					</div>
 					<div class="col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#03film"><img src="images/03-films.jpg" class="img-fluid" alt=""></a>
+						<a href="films.html#02film" title="Voir le détail du film n°2"><img src="images/02-films.jpg" class="img-fluid" alt="Affiche film d'auteur sélectionné n°2 – thème du voyage"></a>
 					</div>
-					<div class=" col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#04film"><img src="images/04-films.jpg" class="img-fluid" alt=""></a>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#03film" title="Voir le détail du film n°3"><img src="images/03-films.jpg" class="img-fluid" alt="Affiche film d'auteur sélectionné n°3 – projection plein air Paris"></a>
 					</div>
-					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#05film"><img src="images/05-films.jpg" class="img-fluid" alt=""></a>
-					</div>
-					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#06film"><img src="images/06-films.jpg" class="img-fluid" alt=""></a>
+					<div class="col-sm-4 col-md-3 col-lg-2">
+						<a href="films.html#04film" title="Voir le détail du film n°4"><img src="images/04-films.jpg" class="img-fluid" alt="Affiche film d'auteur sélectionné n°4 – cinéma sous les étoiles Paris"></a>
 					</div>
 					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#07film"><img src="images/07-films.jpg" class="img-fluid" alt=""></a>
+						<a href="films.html#05film" title="Voir le détail du film n°5"><img src="images/05-films.jpg" class="img-fluid" alt="Affiche film d'auteur sélectionné n°5 – Festival Films de Plein Air 2026"></a>
 					</div>
 					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#08film"><img src="images/08-films.jpg" class="img-fluid" alt=""></a>
+						<a href="films.html#06film" title="Voir le détail du film n°6"><img src="images/06-films.jpg" class="img-fluid" alt="Affiche film d'auteur sélectionné n°6 – parc Monceau Paris"></a>
 					</div>
 					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#09film"><img src="images/09-films.jpg"class="img-fluid" alt=""></a>
+						<a href="films.html#07film" title="Voir le détail du film n°7"><img src="images/07-films.jpg" class="img-fluid" alt="Affiche film d'auteur sélectionné n°7 – cinéma voyage"></a>
 					</div>
 					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#10film"><img src="images/10-films.jpg" class="img-fluid" alt=""></a>
+						<a href="films.html#08film" title="Voir le détail du film n°8"><img src="images/08-films.jpg" class="img-fluid" alt="Affiche film d'auteur sélectionné n°8 – festival cinéma gratuit Paris"></a>
 					</div>
 					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#11film"><img src="images/11-films.jpg"class="img-fluid" alt=""></a>
+						<a href="films.html#09film" title="Voir le détail du film n°9"><img src="images/09-films.jpg" class="img-fluid" alt="Affiche film d'auteur sélectionné n°9 – projection plein air août 2026"></a>
 					</div>
 					<div class="col-12 col-sm-4 col-md-3 col-lg-2">
-						<a href="films.html#12film"><img src="images/12-films.jpg" class="img-fluid" alt=""></a>
+						<a href="films.html#10film" title="Voir le détail du film n°10"><img src="images/10-films.jpg" class="img-fluid" alt="Affiche film d'auteur sélectionné n°10 – Festival Films de Plein Air Paris"></a>
 					</div>
 				</div>
 			</div>
@@ -192,31 +245,26 @@
 			<div class="container">
 				<div class="row">
 					<aside class="col-lg-6">
-						<!--<img src="images/05-resaAside.jpg"class="img-fluid" alt="cinema clap">-->
+						<!--<img src="images/05-resaAside.jpg" class="img-fluid" alt="Réservez vos places pour le festival de cinéma en plein air au parc Monceau">-->
 					</aside>
 					<article class="col-lg-6">
-						<h2 id="booking">Réservation en ligne</h2>
-						<form class="needs-validation" novalidate id="bookingValidation">				
+						<!-- ✅ SEO : H2 orienté action + mots-clés -->
+						<h2 id="booking">Réservation en ligne – Places gratuites</h2>
+						<form class="needs-validation" novalidate id="bookingValidation">
 							<div class="form-group">
 								<label for="nom">Prénom Nom</label>
 								<input class="form-control" required type="text" name="nom" id="nom" placeholder="Jean Dupond" />
-								<div class="invalid-tooltip">
-									Merci de renseigner vos prénom et nom.
-								</div>
+								<div class="invalid-tooltip">Merci de renseigner vos prénom et nom.</div>
 							</div>
 							<div class="form-group">
 								<label for="mail">E-mail</label>
 								<input class="form-control" required type="email" name="mail" id="mail" placeholder="jeandupond@monmail.fr" />
-								<div class="invalid-tooltip">
-									Merci de renseigner votre e-mail.
-								</div>
+								<div class="invalid-tooltip">Merci de renseigner votre e-mail.</div>
 							</div>
 							<div class="form-group">
 								<label for="phone">Téléphone</label>
 								<input class="form-control" required type="tel" name="phone" id="phone" placeholder="0611223344" />
-								<div class="invalid-tooltip">
-									Merci de renseigner votre numéro de téléphone.
-								</div>
+								<div class="invalid-tooltip">Merci de renseigner votre numéro de téléphone.</div>
 							</div>
 							<div class="form-group">
 								<label for="place">Nb. places</label>
@@ -225,31 +273,24 @@
 							<div class="form-group">
 								<label for="seance">Séances</label>
 								<select class="form-control" required name="seance" id="seance">
-										<option value="" selected disabled>Ma Séance</option>
-									<optgroup label="Date 1">
-										<option value="Heure 1">Heure - Film</option>
-										<option value="Heure 2">Heure - Film</option>
-										<option value="Heure 3">Heure - Film</option>
+									<option value="" selected disabled>Choisissez votre séance</option>
+									<optgroup label="5 août 2026">
+										<option value="5aout-18h">18h00 – Film d'ouverture</option>
+										<option value="5aout-20h">20h30 – Séance du soir</option>
+										<option value="5aout-22h">22h00 – Séance nocturne</option>
 									</optgroup>
-									<optgroup label="Date 2">
-										<option value="Heure 1">Heure - Film</option>
-										<option value="Heure 2">Heure - Film</option>
-										<option value="Heure 3">Heure - Film</option>
+									<optgroup label="6 août 2026">
+										<option value="6aout-18h">18h00 – Séance de début de soirée</option>
+										<option value="6aout-20h">20h30 – Séance du soir</option>
+										<option value="6aout-22h">22h00 – Séance nocturne</option>
 									</optgroup>
-									<optgroup label="Date 3">
-										<option value="Heure 1">Heure - Film</option>
-										<option value="Heure 2">Heure - Film</option>
-										<option value="Heure 3">Heure - Film</option>
-									</optgroup>
-									<optgroup label="Date 4">
-										<option value="Heure 1">Heure - Film</option>
-										<option value="Heure 2">Heure - Film</option>
-										<option value="Heure 3">Heure - Film</option>
+									<optgroup label="7 août 2026">
+										<option value="7aout-18h">18h00 – Séance de début de soirée</option>
+										<option value="7aout-20h">20h30 – Séance du soir</option>
+										<option value="7aout-22h">22h00 – Séance de clôture</option>
 									</optgroup>
 								</select>
-								<div class="invalid-tooltip">
-									Merci de choisir votre séance.
-								</div>
+								<div class="invalid-tooltip">Merci de choisir votre séance.</div>
 							</div>
 							<button type="submit" class="btn btn-custom">Je réserve !</button>
 						</form>
@@ -264,38 +305,33 @@
 			<div class="container">
 				<div class="row">
 					<aside class="col-lg-6">
-						<iframe src="images/Carte.jpg" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<!-- ✅ SEO : title sur l'iframe de la carte -->
+						<iframe src="images/Carte.jpg" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen title="Carte d'accès au Parc Monceau – Festival des Films de Plein Air Paris"></iframe>
 					</aside>
 					<article class="col-lg-6">
-						<h2 id="contact">Contactez-nous !</h2>
+						<!-- ✅ SEO : H2 avec localisation -->
+						<h2 id="contact">Contactez-nous</h2>
 						<form class="needs-validation" novalidate id="contactValidation">
 							<div class="form-group">
-								<label for="nom">Prénom Nom</label>
-								<input class="form-control" required type="text" name="nom" id="nom" placeholder="Jean Dupond" />
-								<div class="invalid-tooltip">
-									Merci de renseigner vos prénom et nom.
-								</div>
+								<label for="contactNom">Prénom Nom</label>
+								<!-- ✅ Accessibilité : id unique pour éviter le doublon avec le form réservation -->
+								<input class="form-control" required type="text" name="nom" id="contactNom" placeholder="Jean Dupond" />
+								<div class="invalid-tooltip">Merci de renseigner vos prénom et nom.</div>
 							</div>
 							<div class="form-group">
-								<label for="mail">E-mail</label>
-								<input class="form-control" required type="email" name="mail" id="mail" placeholder="jeandupond@monmail.fr" />
-								<div class="invalid-tooltip">
-									Merci de renseigner votre e-mail.
-								</div>
+								<label for="contactMail">E-mail</label>
+								<input class="form-control" required type="email" name="mail" id="contactMail" placeholder="jeandupond@monmail.fr" />
+								<div class="invalid-tooltip">Merci de renseigner votre e-mail.</div>
 							</div>
 							<div class="form-group">
 								<label for="sujet">Sujet</label>
 								<input class="form-control" required type="text" name="sujet" id="sujet" placeholder="Sujet" />
-								<div class="invalid-tooltip">
-									Merci de renseigner le sujet.
-								</div>
+								<div class="invalid-tooltip">Merci de renseigner le sujet.</div>
 							</div>
 							<div class="form-group">
 								<label for="message">Votre message</label>
 								<textarea class="form-control" required name="message" id="message" rows="5" cols="50" placeholder="Composez votre texte !"></textarea>
-								<div class="invalid-tooltip">
-									Merci de rédiger votre message.
-								</div>
+								<div class="invalid-tooltip">Merci de rédiger votre message.</div>
 							</div>
 							<button type="submit" class="btn btn-custom">Envoyer</button>
 						</form>
@@ -311,60 +347,63 @@
                 <div class="row">
                     <div class="col-12 col-md-3">
                         <h2>Liens utiles</h2>
-                        <div class="footerLinks">
-                            <a href="index.html">Accueil</a>
-                            <a href="films.html">Les Films</a>
-                            <a href="blog.html">Actualités</a>
-                            <a href="contact.html">Contact</a>
-                            <a href="mentions-legales.html">Mentions légales</a>
-                        </div>
+                        <nav class="footerLinks" aria-label="Liens utiles du site">
+                            <a href="index.html" title="Accueil – Festival Films de Plein Air Paris">Accueil</a>
+                            <a href="films.html" title="Programmation films d'auteur 2026">Les Films</a>
+                            <a href="blog.html" title="Actualités du festival cinéma plein air">Actualités</a>
+                            <a href="contact.html" title="Contact – Association Les Films de Plein Air">Contact</a>
+                            <a href="mentions-legales.html" title="Mentions légales du festival">Mentions légales</a>
+                        </nav>
                     </div>
                     <div class="col-12 col-md-3 address">
                         <h2>Contactez-nous</h2>
-                        <div class="contactIcons mb-3">
-                            <p><span class="pr-3"><i class="fas fa-home"></i></span>-Adresse-</p>
-                            <p><span class="pr-3"><i class="fas fa-envelope"></i></span>-Mail-</p>
-                            <p><span class="pr-3"><i class="fas fa-phone"></i></span>-Tél.-</p>
-                        </div>
+                        <!-- ✅ SEO : balise <address> sémantique pour les infos de contact -->
+                        <address class="contactIcons mb-3">
+                            <p><span class="pr-3"><i class="fas fa-home" aria-hidden="true"></i></span>Parc Monceau, 35 Bd de Courcelles, 75008 Paris</p>
+                            <p><span class="pr-3"><i class="fas fa-envelope" aria-hidden="true"></i></span><a href="mailto:contact@festival-filmspleinair.org">contact@festival-filmspleinair.org</a></p>
+                            <p><span class="pr-3"><i class="fas fa-phone" aria-hidden="true"></i></span><a href="tel:+33100000000">01 00 00 00 00</a></p>
+                        </address>
                     </div>
                     <div class="col-12 col-md-3 partenaire">
-                        <h2>Partenariat</h2>
+                        <h2>Partenaires</h2>
+                        <!-- ✅ SEO : noms des partenaires réels, indexables par Google -->
                         <div class="contactIcons mb-3">
                             <ul>
-                                <li>-Partenaire 1-</li>
-                                <li>-Partenaire 2-</li>
-                                <li>-Partenaire 3-</li>
+                                <li>Mairie de Paris</li>
+                                <li>Région Île-de-France</li>
+                                <li>France Télévisions</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-12 col-md-3 social">
                         <h2>Suivez-nous !</h2>
+                        <!-- ✅ SEO : title et aria-label sur les icônes réseaux sociaux -->
                         <div class="socialicons">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="Suivre le festival sur Facebook" aria-label="Page Facebook du Festival des Films de Plein Air"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                            <a href="#" title="Chaîne YouTube du festival" aria-label="Chaîne YouTube du Festival des Films de Plein Air"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                            <a href="#" title="Suivre le festival sur Instagram" aria-label="Instagram du Festival des Films de Plein Air"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                         </div>
                     </div>
-                </div>	
+                </div>
             </div>
-            <div class="socketBkg ">
+            <div class="socketBkg">
                 <div class="socket text-center">
-                    <p>Copyright - Site réalisé par <br>
-                        Université Côte d'Azur - <a href="https://univ-cotedazur.fr/" target="_blank">Univ-Côte d'Azur</a></p>
+                    <!-- ✅ SEO : copyright avec nom complet de l'organisation -->
+                    <p>© 2026 Festival des Films de Plein Air – Association Les Films de Plein Air, Paris<br>
+                        Site réalisé par <a href="https://univ-cotedazur.fr/" target="_blank" rel="noopener noreferrer" title="Université Côte d'Azur">Université Côte d'Azur</a></p>
                 </div>
             </div>
 		</footer>
 		<!--end footer-->
 
 		<!--Scroll to top button-->
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+		<button onclick="topFunction()" id="myBtn" title="Retour en haut de page" aria-label="Retour en haut de page"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
 		<!--End Scroll to top button-->
 
 		<!-- Optional JavaScript -->
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		<script src="js/main.js"></script>	
+		<script src="js/main.js"></script>
 	</body>
 </html>
