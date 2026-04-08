@@ -30,10 +30,11 @@
 
 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 <div class="navbar-nav ml-auto">
-<a class="nav-item nav-link" href="index.html">Accueil</a>
-<a class="nav-item nav-link active" href="#">Les Films</a>
-<a class="nav-item nav-link" href="blog.html">Actualités</a>
-<a class="nav-item nav-link" href="contact.html">Contact</a>
+<a class="nav-item nav-link" href="index.html" title="Accueil du Festival des Films de Plein Air">Accueil</a>
+			<a class="nav-item nav-link" href="films.html" title="Programmation des films d'auteur 2026">Les Films</a>
+			<a class="nav-item nav-link" href="index.html#booking" title="Réserver vos places pour le festival">Réservation</a>
+			<a href="blog.html" class="nav-item nav-link navLink" title="Actualités du festival">Actualités</a>
+			<a class="nav-item nav-link active" href="#" title="Page contact du Festival des Films de Plein Air">Contact</a>
 </div>
 </div>
 </nav>
@@ -217,6 +218,68 @@
 
 </div>
 </section>
+<footer class="container-fluid footer">
+            <div class="container py-3">
+                <div class="row">
+                    <div class="col-12 col-md-3">
+                        <h2>Liens utiles</h2>
+                        <nav class="footerLinks" aria-label="Liens utiles du site">
+                            <a href="index.html" title="Accueil – Festival Films de Plein Air Paris">Accueil</a>
+                            <a href="films.html" title="Programmation films d'auteur 2026">Les Films</a>
+                            <a href="blog.html" title="Actualités du festival cinéma plein air">Actualités</a>
+                            <a href="contact.html" title="Contact – Association Les Films de Plein Air">Contact</a>
+                            <a href="mentions-legales.html" title="Mentions légales du festival">Mentions légales</a>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-3 address">
+                        <h2>Contactez-nous</h2>
+                        <!-- ✅ SEO : balise <address> sémantique pour les infos de contact -->
+                        <address class="contactIcons mb-3">
+                            <p><span class="pr-3"><i class="fas fa-home" aria-hidden="true"></i></span>Parc Monceau, 35 Bd de Courcelles, 75008 Paris</p>
+                            <p><span class="pr-3"><i class="fas fa-envelope" aria-hidden="true"></i></span><a href="mailto:contact@festival-filmspleinair.org">contact@festival-filmspleinair.org</a></p>
+                            <p><span class="pr-3"><i class="fas fa-phone" aria-hidden="true"></i></span><a href="tel:+33100000000">01 00 00 00 00</a></p>
+                        </address>
+                    </div>
+                    <div class="col-12 col-md-3 partenaire">
+                        <h2>Partenaires</h2>
+                        <!-- ✅ SEO : noms des partenaires réels, indexables par Google -->
+                        <div class="contactIcons mb-3">
+                            <ul>
+                                <li>Mairie de Paris</li>
+                                <li>Région Île-de-France</li>
+                                <li>France Télévisions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 social">
+                        <h2>Suivez-nous !</h2>
+                        <!-- ✅ SEO : title et aria-label sur les icônes réseaux sociaux -->
+                        <div class="socialicons">
+                        <a href="https://www.facebook.com/" title="Suivre le festival sur Facebook" aria-label="Page Facebook du Festival des Films de Plein Air"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+						<a href="https://www.youtube.com/" title="Chaîne YouTube du festival" aria-label="Chaîne YouTube du Festival des Films de Plein Air"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/" title="Suivre le festival sur Instagram" aria-label="Instagram du Festival des Films de Plein Air"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="socketBkg">
+                <div class="socket text-center">
+                    <!-- ✅ SEO : copyright avec nom complet de l'organisation -->
+                    <p>© 2026 Festival des Films de Plein Air – Association Les Films de Plein Air, Paris<br>
+                        Site réalisé par <a href="https://univ-cotedazur.fr/" target="_blank" rel="noopener noreferrer" title="Université Côte d'Azur">Université Côte d'Azur</a></p>
+                </div>
+            </div>
+		</footer>
+		<!--end footer-->
 
+		<!--Scroll to top button-->
+		<button onclick="topFunction()" id="myBtn" title="Retour en haut de page" aria-label="Retour en haut de page"><i class="fas fa-chevron-up" aria-hidden="true"></i></button>
+		<!--End Scroll to top button-->
+
+		<!-- Optional JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="js/main.js"></script>
 </body>
 </html>

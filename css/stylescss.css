@@ -14,6 +14,14 @@ body {
     border-left: 5px solid #e96b55;
     padding-left: 5%;
     margin-bottom: 3%; }
+  body h3 {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: "Monserrat", sans-serif;
+    font-weight: 700;
+    border-left: 5px solid #e96b55;
+    padding-left: 5%;
+    margin-bottom: 3%; }
   body a {
     color: #e96b55; }
     body a:hover {
@@ -78,7 +86,6 @@ body {
     color: #5eab99; }
 
 .welcome aside {
-  background: url("../images/01-Image.jpg") no-repeat bottom;
   background-size: 100% auto;
   height: auto;
   min-height: 200px; }
@@ -105,19 +112,17 @@ body {
       border-color: white; }
 
 .about aside {
-  background: url("../images/02-Image.jpg") no-repeat center;
   background-size: 100% auto;
   height: auto;
   min-height: 200px; }
 
 .news aside {
-  background: url("../images/03-Image.jpg") no-repeat center;
   background-size: 100% auto;
   height: auto;
   min-height: 200px; }
 
 .movie {
-  background: #f8d480 url("../images/04-Image.jpg") no-repeat bottom;
+  background: #f8d480 url("../images/festival_5.jpg") no-repeat bottom;
   background-size: 100% auto;
   height: auto;
   min-height: 200px; }
@@ -125,7 +130,6 @@ body {
     padding: 3% 2%; }
 
 .booking aside {
-  background: url("../images/05-Image.jpg") no-repeat center;
   background-size: 100% auto;
   height: auto;
   min-height: 200px; }
